@@ -152,3 +152,36 @@
     transform: translateX(100px) translateY(1px);
     animation: balloons 10s infinite alternate ease-in-out;
 }
+@media screen and (max-width:480px) {
+    .hero__main {
+       display: flex;
+       flex-direction: column;
+    }
+    .hero__right {
+        overflow: hidden;
+        flex: 1;
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-right-radius: 0.7rem;
+        border-bottom-left-radius: 0.7rem;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    .main__login {
+        flex: 1;
+        border-radius: 0.7rem;
+    }
+    .hero__main h1 {
+        position: relative;
+        text-align: center;
+    }
+    .login__title  {
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    .button--primary {
+        margin: 0rem auto;
+    }
+}
