@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *, *::before, *::after {
     box-sizing: border-box;
   }
   * {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
   }
     html, body {
     height: 100%;
@@ -10,6 +12,7 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    background: #a8c6e6b6;
   }
   img, picture, video, canvas, svg {
     display: block;
@@ -21,3 +24,98 @@
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  .hero__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.945);
+    margin: auto auto;
+    height: 90vh;
+    width: 90%;
+    border-radius: 0.7rem;
+  }
+  .hero__main h1 {
+    position: absolute;
+    padding: 1rem;
+    color:  #fa5757;
+  }
+  .main__login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  .login__title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .login__title h2 {
+    padding-bottom: 1rem;
+  }
+  .login__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    gap: 1rem;
+  }
+  .login__form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #a8a8a8;
+  }
+.login__form input:focus {
+    outline: none;
+}
+.login__text .form__forgot {
+    font-weight: bolder;
+    transition: color 100ms;
+    cursor: pointer;
+}
+.login__text p{
+    width: fit-content;
+}
+.login__text .form__forgot:hover {
+    color: #6C9BCF;
+}
+.login__text .form__register {
+    font-size: 0.8rem;
+}
+.login__text .form__register span {
+    color: blue;
+    cursor: pointer;
+    transition: color 100ms;
+} 
+.login__text .form__register span:hover {
+    color: #6C9BCF;
+}
+.button--primary {
+    background-color: transparent;
+    border: 1px solid #A5C0DD;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0;
+    width: 70%;
+    cursor: pointer;
+    transition: background 100ms;
+}
+.button--primary:hover {
+    background-color: #A5C0DD;
+    color: white;
+}
+.hero__right {
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    background-color: #ff7373c4;
+}
