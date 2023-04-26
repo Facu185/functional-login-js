@@ -40,7 +40,7 @@
     height: 90vh;
     width: 90%;
     border-radius: 0.7rem;
-    animation: login 2s ease-in-out forwards;
+    animation: login 1.5s ease-in-out forwards;
     opacity: 0%;
   }
   .hero__main h1 {
@@ -123,4 +123,32 @@
 }
 @keyframes login {
     100%{opacity: unset;}
+}
+#Vector_35,#Vector_41,#Vector_44,#Vector_47,#Vector_42,#Vector_46,#Vector_45,#Vector_48,#Vector_43 {
+    transform: translateX(15px) translateY(-10px) rotate(1deg);
+    animation: balloons 2s infinite alternate ease-in-out;
+}   
+@keyframes balloons {
+    100%{transform: unset;}
+}
+#Vector_4,#Vector_5,#Vector_10,#Vector_9,#Vector_8,#Vector_13,#Vector_6,#Vector_7,#Vector_14 {
+    transform: translateX(50px) translateY(-200px) rotate(3deg);
+    animation: balloons 10s infinite alternate ease-in-out;
+}
+#Vector_15,#Vector_16,#Vector_19,#Vector_20,#Vector_21,#Vector_22,#Vector_23,#Vector_24,#Vector_25,#Vector_17,#Vector_18 {
+    transform: translateX(10px) translateY(150px) rotate(-3deg);
+    animation: balloons 15s infinite alternate ease-in-out;
+}
+#Vector,#Vector_2,#Vector_3 {
+    transform: translateX(70px) translateY(1px);
+    animation: balloons 10s infinite alternate ease-in-out;
+}
+#Vector_28,#Vector_27,#Vector_26 {
+    transform: translateX(-80px) translateY(1px);
+    animation: balloons 8s infinite alternate ease-in-out;
+} 
+#Vector_49,#Vector_50,#Vector_51 {
+    z-index: -1;
+    transform: translateX(100px) translateY(1px);
+    animation: balloons 10s infinite alternate ease-in-out;
 }
