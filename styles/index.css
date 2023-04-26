@@ -40,6 +40,8 @@
     height: 90vh;
     width: 90%;
     border-radius: 0.7rem;
+    animation: login 2s ease-in-out forwards;
+    opacity: 0%;
   }
   .hero__main h1 {
     position: absolute;
@@ -118,4 +120,7 @@
     border-top-right-radius: 0.7rem;
     border-bottom-right-radius: 0.7rem;
     background-color: #ff7373c4;
+}
+@keyframes login {
+    100%{opacity: unset;}
 }
