@@ -152,6 +152,9 @@
     transform: translateX(100px) translateY(1px);
     animation: balloons 10s infinite alternate ease-in-out;
 }
+.error {
+  color: #fa5757;
+}
 @media screen and (max-width:480px) {
     .hero__main {
        display: flex;
