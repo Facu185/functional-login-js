@@ -1,5 +1,5 @@
 let users = ["facufa12", "santi29", "christian", "diseño"];
-let passwords = ["facu185", "apolo1", "mendndez", "web"];
+let passwords = ["facu185", "apollo1", "profe", "web"];
 const userInput = document.getElementById("user");
 const passwordInput = document.getElementById("password");
 const button = document.getElementById("buttonLogin");
@@ -14,7 +14,7 @@ function login() {
     alert("Alguno de los campos estan vacios");
     throw new Error("Alguno de los campos estan vacios");
   }
-  if (userindex || passwordindex === -1) {
+  if ((userindex || passwordindex) === -1) {
     if (!document.getElementById("errorText")) {
       const textError = document.createElement("p");
       textError.innerText = "Alguno de los campos esta incorrecto";
@@ -23,7 +23,8 @@ function login() {
       container.append(textError);
       throw new Error("Alguno de los campos esta incorrecto");
     }
-  } else if (userindex === passwordindex) {
+  } 
+  if (userindex === passwordindex) {
     alert("Logeado con exito");
   }
 }
